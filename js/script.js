@@ -69,7 +69,10 @@ function getRandomQuote () {
 /***
  * `printQuote` function
 ***/
-// This function prints a random quote to the page
+/**
+ * print random quote to the webpage.
+ *  
+ */
 function printQuote() {
 
   let randomQuote = getRandomQuote(quotes);
