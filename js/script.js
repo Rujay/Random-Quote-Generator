@@ -14,39 +14,39 @@ project 1 - A Random Quote Generator
 const quotes = [
   {
       quote: 'Constantly take inventory of what’s important to you.',
-      author: 'Dave Chappelle' ,
+      source: 'Dave Chappelle' ,
      
   },
   {
       quote: 'Be yourself; everyone else is already taken.',
-      author: 'Oscar Wilde' ,
+      source: 'Oscar Wilde' ,
      
   },
   {
       quote: 'Why so serious?',
-      author: 'Joker' ,
+      source: 'Joker' ,
       citation: 'The Dark Knight',
       year: '2008'
   },
   {
       quote: 'To infinity and beyond!',
-      author: 'Buzz Lightyear' ,
+      source: 'Buzz Lightyear' ,
       citation: 'Toy Story',
       year: '1995'
   },
   {
       quote: "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
-      author: 'James Cameron' ,
+      source: 'James Cameron' ,
    
   },
   {
       quote: 'Never let the fear of striking out keep you from playing the game.',
-      author: 'Babe Ruth' ,
+      source: 'Babe Ruth' ,
      
   },
   {
     quote: 'All labor that uplifts humanity has dignity and importance and should be undertaken with painstaking excellence.',
-    author: 'Martin Luther King Jr.' ,
+    source: 'Martin Luther King Jr.' ,
    
 },
 
@@ -77,7 +77,7 @@ function printQuote() {
 
   let randomQuote = getRandomQuote(quotes);
   let html = `<p class="quote">${randomQuote.quote}</p>
-  <p class="source">${randomQuote.author}`;
+  <p class="source">${randomQuote.source}`;
   
   if (randomQuote.citation) {
     html += `<span class="citation">${randomQuote.citation}</span>`;
